@@ -1,0 +1,15 @@
+server:
+  port: 10021
+
+zuul:
+  add-host-header: true
+  ignoredServices: '*'
+  routes:
+    route-zuul:
+      path: /zuul/**
+      serviceId: zuul
+      retryable: true
+    route-test:
+      path: /demo/**
+      serviceId: minion-demo
+      retryable: true

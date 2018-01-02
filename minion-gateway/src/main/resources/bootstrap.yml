@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: minion-gateway
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: minion-config
+    loadbalancer:
+      retry:
+        enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+logging:
+  file: ./logs/${spring.application.name}.log
+  level:
+    com.netflix: error
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10001/eureka/
+
+management:
+  security:
+    enabled: false
+
+ribbon:
+  ConnectTimeout: 500
+  ReadTimeout: 3000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: true
+
+feign:
+  hystrix:
+    enabled: true
+
+minion-config:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

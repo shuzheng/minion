@@ -14,6 +14,7 @@
 	<modules>
 		<module>minion-eureka</module>
 		<module>minion-config</module>
+		<module>minion-gateway</module>
 	</modules>
 
 </project>
