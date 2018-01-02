@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: minion-admin
+  profiles:
+    active: dev
+
+logging:
+  file: ./logs/${spring.application.name}.log
+  level:
+    com.netflix: error

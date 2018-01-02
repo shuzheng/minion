@@ -1,5 +1,5 @@
 server:
-  port: 10021
+  port: 10031
 
 zuul:
   add-host-header: true

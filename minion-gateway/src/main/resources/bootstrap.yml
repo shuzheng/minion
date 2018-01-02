@@ -24,6 +24,7 @@ logging:
   file: ./logs/${spring.application.name}.log
   level:
     com.netflix: error
+    org.springframework.cloud.netflix.turbine: warn
 
 eureka:
   client:

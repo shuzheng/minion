@@ -1,5 +1,5 @@
 server:
-  port: 10011
+  port: 10021
 
 eureka:
   client:
@@ -15,4 +15,8 @@ spring:
 
 security:
   basic:
+    enabled: false
+
+management:
+  security:
     enabled: false
