@@ -16,6 +16,7 @@
 		<module>minion-admin</module>
 		<module>minion-config</module>
 		<module>minion-gateway</module>
+		<module>minion-zipkin</module>
 	</modules>
 
 </project>

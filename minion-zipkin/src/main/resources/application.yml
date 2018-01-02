@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: minion-zipkin
+  profiles:
+    active: dev
+
+logging:
+  file: ./logs/${spring.application.name}.log
+  level:
+    com.netflix: error
+
+management:
+  security:
+    enabled: false
