@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>minion-eureka</module>
+		<module>minion-config</module>
 	</modules>
 
 </project>

@@ -1,0 +1,18 @@
+server:
+  port: 10021
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10001/eureka/,http://127.0.0.1:10002/eureka/,http://127.0.0.1:10003/eureka/
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+
+security:
+  basic:
+    enabled: false

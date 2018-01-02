@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.javay.minion</groupId>
-	<artifactId>minion-eureka</artifactId>
+	<artifactId>minion-config</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>minion-eureka</name>
+	<name>minion-config</name>
 	<description>http://javay.cn</description>
 
 	<parent>
@@ -26,10 +26,15 @@
 	</properties>
 
 	<dependencies>
-		<!-- eureka server -->
+		<!-- eureka client -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<!-- config server -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		<!-- test -->
 		<dependency>

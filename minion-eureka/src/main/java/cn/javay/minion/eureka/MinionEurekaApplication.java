@@ -11,4 +11,5 @@ public class MinionEurekaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MinionEurekaApplication.class, args);
 	}
+
 }
