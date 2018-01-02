@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: minion-eureka
+  profiles:
+    active: dev
+
+logging:
+  file: ./logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: error
