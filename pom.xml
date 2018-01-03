@@ -17,6 +17,7 @@
 		<module>minion-config</module>
 		<module>minion-gateway</module>
 		<module>minion-zipkin</module>
-	</modules>
+        <module>minion-demo</module>
+    </modules>
 
 </project>

@@ -1,0 +1,11 @@
+spring:
+  zipkin:
+    base-url: http://127.0.0.1:10041
+
+server:
+  port: 20012
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10001/eureka/,http://127.0.0.1:10002/eureka/,http://127.0.0.1:10003/eureka/

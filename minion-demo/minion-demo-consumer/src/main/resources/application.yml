@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: minion-demo-consumer
+  profiles:
+    active: dev
+
+logging:
+  file: ./logs/${spring.application.name}.log
+  level:
+    com.netflix: error
+
+management:
+  security:
+    enabled: false
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
