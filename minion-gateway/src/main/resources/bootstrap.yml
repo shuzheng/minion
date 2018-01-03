@@ -46,6 +46,5 @@ feign:
   hystrix:
     enabled: true
 
-minion-config:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+ribbon:
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
