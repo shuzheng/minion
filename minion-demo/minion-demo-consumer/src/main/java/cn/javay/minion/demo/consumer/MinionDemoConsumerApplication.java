@@ -17,4 +17,5 @@ public class MinionDemoConsumerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MinionDemoConsumerApplication.class, args);
 	}
+
 }
