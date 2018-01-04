@@ -1,8 +1,10 @@
 # minion
 
+![minion](minion.jpg)
+
 ## 项目结构
 ```
-godmars
+minion
 ├── minion-eureka 注册中心[10001]
 ├── minion-admin 监控中心[10011]
 ├── minion-config 配置中心[10021]
