@@ -1,5 +1,7 @@
 # minion
 
+[![Build Status](https://travis-ci.org/shuzheng/minion.svg?branch=master)](https://travis-ci.org/shuzheng/minion)
+
 ![minion](minion.jpg)
 
 ## 项目结构
