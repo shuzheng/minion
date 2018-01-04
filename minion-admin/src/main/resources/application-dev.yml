@@ -1,3 +1,22 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 469741414@qq.com
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  boot:
+    admin:
+      notify:
+        mail:
+          from: 469741414@qq.com
+          to: 469741414@qq.com
+
 server:
   port: 10011
 
