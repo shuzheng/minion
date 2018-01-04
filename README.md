@@ -30,3 +30,7 @@ minion
 - [服务追踪] [http://127.0.0.1:10041/zipkin/](http://127.0.0.1:10041/zipkin/ "服务追踪")
 
 - [断路器监控] [http://127.0.0.1:20012/hystrix](http://127.0.0.1:20012/hystrix "断路器监控")
+
+## License
+
+Apache-2.0
