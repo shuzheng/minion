@@ -12,12 +12,13 @@
 	<description>http://javay.cn</description>
 
 	<modules>
+		<module>minion-parent</module>
 		<module>minion-eureka</module>
 		<module>minion-admin</module>
 		<module>minion-config</module>
 		<module>minion-gateway</module>
 		<module>minion-zipkin</module>
         <module>minion-demo</module>
-    </modules>
+	</modules>
 
 </project>
