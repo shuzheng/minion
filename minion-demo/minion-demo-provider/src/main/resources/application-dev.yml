@@ -1,9 +1,9 @@
 spring:
-#  datasource:
-#    url:
-#    username: root
-#    password: 123456
-#    driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/minion?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
   zipkin:
     base-url: http://127.0.0.1:10041
 
