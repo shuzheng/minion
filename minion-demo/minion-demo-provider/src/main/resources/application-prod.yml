@@ -6,6 +6,11 @@ server:
   port: 20011
 
 eureka:
+  instance:
+    metadata-map:
+      zone: prod
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.metadata-map.zone}:${spring.cloud.client.ipAddress}:${server.port}
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:10001/eureka/,http://127.0.0.1:10002/eureka/,http://127.0.0.1:10003/eureka/

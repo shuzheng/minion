@@ -3,9 +3,14 @@ spring:
     base-url: http://127.0.0.1:10041
 
 server:
-  port: 20011
+  port: 21011
 
 eureka:
+  instance:
+    metadata-map:
+      zone: test
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.metadata-map.zone}:${spring.cloud.client.ipAddress}:${server.port}
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:10001/eureka/

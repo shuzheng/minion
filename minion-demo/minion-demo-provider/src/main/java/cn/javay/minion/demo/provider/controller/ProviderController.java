@@ -18,9 +18,12 @@ public class ProviderController {
     @Value("${server.port}")
     String port;
 
+    @Value("${spring.profiles.active}")
+    String active;
+
     @RequestMapping("/demo")
     public String demo() {
-        return "I'm from port:" + port;
+        return "I'm from port:" + port + " by " + active;
     }
 
 }
