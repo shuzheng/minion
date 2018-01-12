@@ -1,7 +1,9 @@
 package cn.javay.minion.demo.provider.controller;
 
+import cn.javay.minion.demo.provider.service.DemoUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.commons.util.InetUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +25,9 @@ public class ProviderController {
     @Value("${spring.profiles.active}")
     String active;
 
+    @Autowired
+    DemoUserService demoUserService;
+
     @RequestMapping("/demo")
     public String demo() {
         return "I'm from port:" + port + " by " + active;
@@ -31,7 +36,12 @@ public class ProviderController {
     @GetMapping("/ip")
     public String ip() {
         InetUtils.HostInfo firstNonLoopbackHostInfo = InetUtils.getFirstNonLoopbackHostInfo();
-        return firstNonLoopbackHostInfo.toString();
+        return firstNonLoopbackHostInfo.getIpAddress();
+    }
+
+    @GetMapping("/insert")
+    public Object insert() {
+        return demoUserService.insert();
     }
 
 }
