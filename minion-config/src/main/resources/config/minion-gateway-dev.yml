@@ -13,3 +13,5 @@ zuul:
       path: /demo/**
       serviceId: minion-demo
       retryable: true
+
+times: 104
